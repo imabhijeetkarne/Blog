@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #441752;
+  color: black; /* Deep Purple */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+/* heading for blog post */
+h2 {
+  font-size: 3rem;
+  color: black; 
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Title for blog post */
+h3 {
+  font-size: 2rem;
+  color: black; /* Deep Purple */
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* Image for blog post */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  border: 2px solid #DD88CF;
+}
+
+img:hover {
+  transform: scale(1.05);
+  border-color: black;
+}
+
+/* Description for blog post*/
+p {
+  font-size: 1.1rem;
+  color: black; /* Darker Muted Purple */
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* search bar */
+.search-input {
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  
+} 
+
+.search-container {
+  display: flex;
+  justify-content: end; 
+  margin-bottom: 20px;
+  margin-right: 20px;
+ 
+}
+
+
+/* General Button Styling (Edit and Delete)*/
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+
+/* pagination  */
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.pagination .active {
+  background-color: #007bff;
+  color: white;
+}
+
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h2 {
+      font-size: 2.5rem;
+  }
+
+  h3 {
+      font-size: 1.7rem;
+  }
+
+  .post-card {
+      padding: 20px;
+      max-width: 90%;
+  }
+}
